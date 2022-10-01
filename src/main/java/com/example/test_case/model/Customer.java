@@ -17,7 +17,7 @@ import java.util.Set;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Customer {
+public class Customer   {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -44,7 +44,6 @@ public class Customer {
     private String image;
 
     private Integer status;
-
 
     @ManyToMany(targetEntity = Role.class,fetch = FetchType.EAGER)
     private Set<Role> role;

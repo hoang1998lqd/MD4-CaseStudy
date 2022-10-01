@@ -17,8 +17,6 @@ public class CartService implements ICartService {
     @Autowired
     CartRepository cartRepository;
 
-    @Autowired
-    IItemService itemService;
 
     @Override
     public List<Cart> findAllByCustomerId(Long id) {
